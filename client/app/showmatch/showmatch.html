@@ -8,15 +8,14 @@
       <div class="session-name large">( {{ session.name }} )</div>
     </h1>
   </div>
-  <p class="center"><span class="bold">{{ user.name }}</span>, you guys have a MovieMatch!</p>
+  <p class="center"><span class="bold">{{ user.name }}</span>, you have a MovieMatch!</p>
   <div class="movie">
     <h2 class="center">{{ currMovie.title }} ({{ currMovie.release_date | date:"yyyy" }})</h2>
-    <h6 class="center">{{ currMovie.vote_average }} | <span ng-repeat="genre in currMovie.genres">{{ genre }} </span> | ({{ currMovie.original_language }})</h6>
+    <h6 class="center">Avg Rating: {{ currMovie.vote_average }} | ({{ currMovie.original_language }})</h6>
     <div class="row">
       <!-- We want to size the poster appropriately so we can
       see the buttons at the bottom -->
-      <img class="poster col-xs-6" alt="{{ currMovie.title }} poster" src="https://image.tmdb.org/t/p/w185{{ currMovie.poster_path }}">
-    </div>
+      <img class="poster col-xs-6" alt="{{ currMovie.title }} poster" src="https://image.tmdb.org/t/p/w500{{ currMovie.poster_path }}">
       <div class="summary col-xs-6">
         <h4>Movie Summary</h4>
         <p>{{ currMovie.overview }}</p>

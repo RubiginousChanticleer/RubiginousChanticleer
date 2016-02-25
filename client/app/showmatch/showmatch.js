@@ -11,7 +11,6 @@ angular.module( 'moviematch.showmatch', [] )
 
     $scope.session.name = "Girls Night Out";
 
-
     $scope.moviePackage = [
       {
         "poster_path": "/jjBgi2r5cRt36xF6iNUEhzscEcb.jpg",
@@ -75,5 +74,8 @@ angular.module( 'moviematch.showmatch', [] )
         "video": false,
         "vote_average": 6.29
       }
-    ]
+    ];
+
+    $scope.currMovie = $scope.moviePackage[0];
+    
   });
