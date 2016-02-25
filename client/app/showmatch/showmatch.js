@@ -11,7 +11,11 @@ angular.module( 'moviematch.showmatch', [] )
 
     $scope.session.name = "Girls Night Out";
 
+<<<<<<< HEAD
     $scope.movie = [
+=======
+    $scope.moviePackage = [
+>>>>>>> dcc35bbaa93ec526ef175c9d2a2efe18cd393a3b
       {
         "poster_path": "/jjBgi2r5cRt36xF6iNUEhzscEcb.jpg",
         "adult": false,
@@ -77,5 +81,9 @@ angular.module( 'moviematch.showmatch', [] )
     ];
 
     $scope.currMovie = $scope.moviePackage[0];
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> dcc35bbaa93ec526ef175c9d2a2efe18cd393a3b
   });
